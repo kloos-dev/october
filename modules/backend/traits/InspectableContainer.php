@@ -47,7 +47,7 @@ trait InspectableContainer
                 continue;
             }
 
-            $propertyMethodName .= ucfirst($part);
+            $propertyMethodName .= ucfirst(studly_case($part));
         }
 
         $methodName = 'get'.$propertyMethodName.'Options';
